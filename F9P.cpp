@@ -44,7 +44,6 @@ void F9P::run() {
     if (_f9p) delete _f9p;
 
     _f9p = new WSerial::Serial();
-    _f9p = new WSerial::Serial();
     _f9p->setPortName(_device);
     if (!_f9p->open()) {
         int retries = 60;
